@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+   
+    <title>Document</title>
+</head>
+<body>
+    <div class="intro" >
+        <img src="/task2/fruit_ninja_intro.png" alt="" width="100%" >
+    </div>
+    <div class="box" onmousemove="cursor_move(event)"  >
+        <div  id="cursor">
+            <img src="/task2/fruitninja_knife2.png" alt="" width="100%">
+        </div>
+
+    </div>
+
+    <div id="btn" onclick="btn_clicked()">PLAY!</div>
+
+    <div class="fruit" id="watermelon" onclick="fruit_chopped(this); score_increase()" >
+        <img src="watermelon.png" alt="" width="150%">
+    </div>
+
+    <div class="fruit" id="pineapple" onclick="fruit_chopped(this); score_increase()">
+        <img src="Pineapple.png" alt="" width="100%">
+    </div>
+
+    <div class="fruit" id="apple" onclick="fruit_chopped(this); score_increase()">
+        <img src="apple.png" alt="" width="80%">
+    </div>
+
+    <div class="fruit" id="pear" onclick="fruit_chopped(this); score_increase()">
+        <img src="pear.png" alt="" width="200%">
+    </div>
+
+    <div class="bomb" id="bomb1" onclick="fruit_chopped(this); score_decrease()" >
+        <img src="/task2/fruitninja_bomb.png" alt="" width="130%">
+    </div>
+
+    <div class="bomb" id="bomb2" onclick="fruit_chopped(this); score_decrease()">
+        <img src="/task2/fruitninja_bomb.png" alt="" width="130%">
+    </div>
+
+    <div id="end">
+        <img src="/task2/you_win.png" alt="" width="100%">
+    </div>
+    
+    <div id="score">Score: 0</div>
+</body>
+</html>
