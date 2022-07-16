@@ -1,2 +1,2 @@
 # mern
-All assignments of MERN program by LInux World
+All assignments of MERN program by Linux World
